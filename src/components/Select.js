@@ -190,7 +190,7 @@ const Select = ({ set, distance }) => {
 
         <button
           onClick={calculateroute}
-          className='bg-[#1B31A8] md:hidden block w-[141px] h-[40px] mx-auto my-[23px] rounded-[32px] font-plexSans font-semibold text-lg text-[#FFFFFF]'
+          className='bg-[#1B31A8] focus:outline-none md:hidden block w-[141px] h-[40px] mx-auto my-[23px] rounded-[32px] font-plexSans font-semibold text-lg text-[#FFFFFF]'
         >Calculate</button>
 
 
