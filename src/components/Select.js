@@ -177,7 +177,7 @@ const Select = ({ set, distance }) => {
           <div className='relative  font-plexSans'>
             <label className='hidden md:block   text-[14px] font-normal  py-1 text-[#000000] ' >Transit Mode</label>
             <div className='border bg-[#ffff] border-[#DCDDEC] rounded-[6px] px-4 md:w-[250px] xs:w-[350px] w-[300px] h-[45px] ' >
-              <select id="mode" className=' focus:outline-none text-[16px] font-[600] text-[#1E2A32] w-[100%] h-[100%]  rounded-[6px] cursor-pointer ' onChange={(e) => {
+              <select id="mode" className='bg-[#ffff] focus:outline-none text-[16px] font-[600] text-[#1E2A32] w-[100%] h-[100%]  rounded-[6px] cursor-pointer ' onChange={(e) => {
                 setmode(e.target.value)
               }}>
                 <option value="DRIVING">Driving</option>
