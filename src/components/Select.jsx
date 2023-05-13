@@ -70,7 +70,7 @@ const Select = ({ set, distance }) => {
       for (let i = 0; i < results.routes[0].legs.length; i++) {
         val = val + results.routes[0].legs[i].distance.value
       }
-      set(results, val / 1000)
+      set(results, (val / 1000))
 
     } catch (err) {
       alert(err)
@@ -201,7 +201,7 @@ const Select = ({ set, distance }) => {
             <span className='font-[700] font-plexSans md:text-3xl text-[22px] text-[#0079FF]'>{distance !== '' ? `${distance} kms` : '__'}</span>
           </div>
 
-          {distance !== '' && <p className='py-[22px] md:px-[26px]   px-[30px] font-WorkSans   text-[12px] text-[#1E2A32] '>The distance between <b>{originref.current.value}</b> and <b>{destinationref.current.value}</b> via the seleted route is <b>{distance}</b>.</p>}
+          {distance !== '' && <p className='py-[22px] md:px-[26px]   px-[30px] font-WorkSans   text-[12px] text-[#1E2A32] '>The distance between <b>{originref.current.value}</b> and <b>{destinationref.current.value}</b> via the seleted route is <b>{distance}</b> kms.</p>}
         </div>
       </div>
     </div>
